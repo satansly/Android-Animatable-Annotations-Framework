@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:paddingBottom="40dp"
+   >
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="262dp"
+        android:layout_height="85dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:baselineAlignBottom="false"
+        android:src="@drawable/calloutbg_iphone" />
+
+    <TextView
+        android:id="@+id/title"
+        android:maxLines="1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Title" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title"
+        android:layout_below="@+id/title"
+        android:text="Small Text"
+        android:layout_centerHorizontal="true"
+        android:textSize="10dp" />
+
+    <ImageButton
+        android:id="@+id/btnAccessory"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignTop="@+id/title"
+        android:layout_toRightOf="@+id/title"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/info" />
+
+</RelativeLayout>
